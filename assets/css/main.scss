@@ -307,6 +307,7 @@ main {
   cursor: pointer;
   transition: 1s;
   background-color: #fff;
+  outline: 0;
 
   a {
     text-decoration: none;
@@ -1599,11 +1600,11 @@ main {
       }
 
       .home_services {
-        height: auto;
+        height: 118vh;
     }
 
     .home-why{
-      height: 145vh;
+      height: 148vh;
     }
 
     .steps-box__item{
@@ -2548,7 +2549,11 @@ main {
 
     .home-why{
       margin-top: 2rem;
-      height: 160vh;
+      height: 170vh;
+    }
+
+    .reviews-null, .reviews-nav__max{
+      left: 3%;
     }
 
     .why-steps__box{
@@ -2617,6 +2622,10 @@ main {
     }
     .footer_social{
       margin-top: 1rem;
+    }
+
+    .tab-header__item{
+      margin-right: 1.5rem;
     }
 
     /*end home page*/  
