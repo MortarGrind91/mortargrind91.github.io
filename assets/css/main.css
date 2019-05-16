@@ -1671,7 +1671,7 @@ main {
 
 /*end media 1200px*/
 /*media h700px*/
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 750px) {
   .footer_page {
     z-index: 7;
   }
@@ -1679,7 +1679,7 @@ main {
     margin-right: 2.5rem;
   }
   .home_services {
-    height: 110vh;
+    height: auto;
   }
   .home-why {
     height: 145vh;
