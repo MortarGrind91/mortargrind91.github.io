@@ -1907,6 +1907,7 @@ main {
 
     #rev_next{
       right: calc(50% - 12.5rem);
+      top: 1px;
     }
 
     .reviews-item__descr{
@@ -2349,6 +2350,7 @@ main {
 
     #c_prev{
       right: 32%;
+      bottom: -2.25rem;
     }
 
     .reviews-sub__title{
@@ -2372,7 +2374,7 @@ main {
 
     .reviews-box__row{
       .reviews-item__img{
-        margin-left: 8rem;
+        margin-left: 6.5rem;
         p:first-of-type{
           margin-top: 0.81rem;
           font-size: 0.875rem;
@@ -2419,6 +2421,7 @@ main {
     #rev_next{
       right: 30%;
       top: unset;
+      bottom: -2rem;
     }
 
     .home_capability{

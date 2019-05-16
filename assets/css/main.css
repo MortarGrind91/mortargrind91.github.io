@@ -1933,6 +1933,7 @@ main {
   }
   #rev_next {
     right: calc(50% - 12.5rem);
+    top: 1px;
   }
   .reviews-item__descr {
     width: 80%;
@@ -2318,6 +2319,7 @@ main {
   }
   #c_prev {
     right: 32%;
+    bottom: -2.25rem;
   }
   .reviews-sub__title {
     padding-top: 2.25rem;
@@ -2336,7 +2338,7 @@ main {
     margin-top: 2rem;
   }
   .reviews-box__row .reviews-item__img {
-    margin-left: 8rem;
+    margin-left: 6.5rem;
   }
   .reviews-box__row .reviews-item__img p:first-of-type {
     margin-top: 0.81rem;
@@ -2373,6 +2375,7 @@ main {
   #rev_next {
     right: 30%;
     top: unset;
+    bottom: -2rem;
   }
   .home_capability {
     margin-bottom: 5rem;
