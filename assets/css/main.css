@@ -1670,6 +1670,26 @@ main {
 }
 
 /*end media 1200px*/
+/*media h700px*/
+@media screen and (max-height: 700px) {
+  .footer_page {
+    z-index: 7;
+  }
+  .tab-header__item {
+    margin-right: 2.5rem;
+  }
+  .home_services {
+    height: 110vh;
+  }
+  .home-why {
+    height: 140vh;
+  }
+  .steps-box__item .steps-item__number {
+    width: 25%;
+  }
+}
+
+/*end media*/
 /*media 1024px*/
 @media screen and (max-width: 1024px) {
   /*home page*/
