@@ -77,7 +77,7 @@ $(function(){
 
     /*slider tab title*/
 
-    if(innerHeight < 800){
+    if(innerWidth < 800){
         $(".tab-header__slider").slick({
             slidesToShow: 3,
             slidesToScroll: 1,
