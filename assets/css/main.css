@@ -331,6 +331,7 @@ main {
   cursor: pointer;
   -webkit-transition: 1s;
   transition: 1s;
+  background-color: #fff;
 }
 
 .main_btn a {
@@ -1599,6 +1600,7 @@ main {
   background-color: #ffffff;
   border: none;
   text-transform: uppercase;
+  outline: none;
 }
 
 /*end contacts block*/
@@ -1875,6 +1877,7 @@ main {
     right: 40%;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
+    top: 1px;
   }
   #c_next {
     left: 35%;
@@ -1909,7 +1912,6 @@ main {
     right: calc(50% - 6.8rem);
   }
   #rev_next {
-    top: 1px;
     right: calc(50% - 12.5rem);
   }
   .reviews-item__descr {
@@ -2248,7 +2250,7 @@ main {
   }
   .home-why {
     margin-top: 2.5rem;
-    height: 135vh;
+    height: 145vh;
   }
   .why-bg__subtitle {
     margin-top: 2rem;
@@ -2424,9 +2426,6 @@ main {
   }
   .home_services {
     height: 108vh;
-  }
-  .home-why {
-    height: 140vh;
   }
   /*end home page*/
 }

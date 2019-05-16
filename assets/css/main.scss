@@ -306,6 +306,7 @@ main {
   justify-content: center;
   cursor: pointer;
   transition: 1s;
+  background-color: #fff;
 
   a {
     text-decoration: none;
@@ -1497,6 +1498,7 @@ main {
     background-color: #ffffff;
     border: none;
     text-transform: uppercase;
+    outline: none;
   }
 }
 
@@ -1830,6 +1832,7 @@ main {
     #c_prev{
       right: 40%;
       transform: rotate(180deg);
+      top: 1px;
     }
     #c_next{
       left: 35%;
@@ -1877,7 +1880,6 @@ main {
     }
 
     #rev_next{
-      top: 1px;
       right: calc(50% - 12.5rem);
     }
 
@@ -2257,7 +2259,7 @@ main {
 
     .home-why{
       margin-top: 2.5rem;
-      height: 135vh;
+      height: 145vh;
     }
 
     .why-bg__subtitle{
@@ -2482,9 +2484,9 @@ main {
       height: 108vh;
     }
 
-    .home-why{
-      height: 140vh;
-    }
+    // .home-why{
+    //   height: 140vh;
+    // }
 
     /*end home page*/  
   }
