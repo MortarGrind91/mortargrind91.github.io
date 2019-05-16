@@ -2066,6 +2066,9 @@ main {
     width: 100%;
     left: 0;
   }
+  .banner-hide__title.display_1 {
+    width: 90%;
+  }
   .left_bar, .right_bar {
     display: none;
   }
@@ -2140,7 +2143,7 @@ main {
     display: block;
   }
   .banner-title__txt {
-    top: 19.5%;
+    top: 20%;
   }
   .banner-hide__title {
     font-size: 2.25rem;
@@ -2181,6 +2184,9 @@ main {
   .page-sub__title .sub-title__line {
     width: 1.56rem;
     top: -11px;
+  }
+  .page-portfolio__tabs {
+    margin-top: 2.5rem;
   }
   .portfolio-box__item img {
     width: 100%;
@@ -2241,7 +2247,8 @@ main {
     margin-bottom: 1.4rem;
   }
   .home-why {
-    height: 130vh;
+    margin-top: 2.5rem;
+    height: 135vh;
   }
   .why-bg__subtitle {
     margin-top: 2rem;

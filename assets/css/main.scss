@@ -2058,6 +2058,10 @@ main {
       }
     }
 
+    .banner-hide__title.display_1{
+      width: 90%;
+    }
+
     .left_bar, .right_bar{
       display: none;
     }
@@ -2126,7 +2130,7 @@ main {
       display: block;
     }
     .banner-title__txt{
-      top: 19.5%;
+      top: 20%;
     }
 
     .banner-hide__title{
@@ -2178,6 +2182,11 @@ main {
         top: -11px;
       }
     }
+
+    .page-portfolio__tabs{
+      margin-top: 2.5rem;
+    }
+      
 
     .portfolio-box__item{
       img{
@@ -2247,7 +2256,8 @@ main {
     }
 
     .home-why{
-      height: 130vh;
+      margin-top: 2.5rem;
+      height: 135vh;
     }
 
     .why-bg__subtitle{
