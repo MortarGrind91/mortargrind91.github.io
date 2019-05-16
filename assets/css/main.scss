@@ -1661,6 +1661,12 @@ main {
     .reviews-nav__max{
       left: 6%;
     }
+
+    .footer_mail {
+      position: relative;
+      top: -2.2rem;
+  }
+
     /*end home page*/ 
   
   }
@@ -2031,6 +2037,10 @@ main {
       font-size: 0.75rem;
     }
 
+    .footer_social{
+      height: 3.375rem;
+    }
+
     /*end home page*/ 
   }
 
@@ -2299,6 +2309,7 @@ main {
     }
 
     .steps-box__item{
+      margin-bottom: 2.5rem;
       .steps-item__line{
         top: 2.6rem;
       }
@@ -2479,6 +2490,7 @@ main {
     .footer_social{
       margin-top: 1.56rem;
       width: 100%;
+      height: auto;
       ul{
         margin-top: 0;
       }
