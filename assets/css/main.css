@@ -1939,7 +1939,7 @@ main {
 
 .price-buble__box {
   position: relative;
-  left: -9rem;
+  left: -7.5rem;
   top: -8.5rem;
 }
 
@@ -1975,7 +1975,7 @@ main {
   margin-top: -11rem;
   margin-bottom: 8.5rem;
   position: relative;
-  z-index: 3;
+  z-index: 6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2467,6 +2467,14 @@ main {
   }
   /*end home page*/
   /* *******************corporate site************************ */
+  .price-buble__box {
+    left: -6rem;
+    top: -6.5rem;
+  }
+  .price-box {
+    margin-top: -9rem;
+    z-index: 6;
+  }
   /* ******************end corporate site********************* */
 }
 
@@ -2554,11 +2562,11 @@ main {
             transform: translateY(-8.2rem);
   }
   .price-buble__box {
-    left: -5rem;
-    top: -2rem;
+    left: -4.5rem;
+    top: -5rem;
   }
   .price-box {
-    margin-top: -2rem;
+    margin-top: -7rem;
   }
   .why-we-buble__box {
     left: -4.5rem;

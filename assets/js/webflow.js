@@ -2536,7 +2536,7 @@ Webflow.require('ix').init([{
       "descend": true,
       "preserve3d": true,
       "stepsA": [{
-        "transition": "transform 3s ease 0",
+        "transition": "transform 4s ease 0",
         "scaleX": 1,
         "scaleY": 1,
         "scaleZ": 1
@@ -2549,7 +2549,7 @@ Webflow.require('ix').init([{
       "preserve3d": true,
       "stepsA": [{
         "opacity": 1,
-        "transition": "transform 2s ease 0, opacity 200 ease 0",
+        "transition": "transform 3s ease 0, opacity 400 ease 0",
         "scaleX": 1,
         "scaleY": 1,
         "scaleZ": 1,
