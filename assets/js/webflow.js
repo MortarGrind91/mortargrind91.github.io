@@ -2179,7 +2179,7 @@ Webflow.require('ix').init([{
   "value": {
     "style": {
       "x": "0px",
-      "y": "200%",
+      "y": "280%",
       "z": "0px"
     },
     "triggers": []
@@ -2676,6 +2676,215 @@ Webflow.require('ix').init([{
       }, {
         "opacity": 1,
         "transition": "transform 600ms ease-in-out 0, opacity 600ms ease-in-out 0",
+        "x": "0px",
+        "y": "0px",
+        "z": "0px"
+      }],
+      "stepsB": []
+    }]
+  }
+},
+{
+  "slug": "onscroll-line",
+  "name": "OnScroll - line",
+  "value": {
+    "style": {
+      "width": 0,
+      "x": "0px",
+      "y": "0px",
+      "z": "0px"
+    },
+    "triggers": [{
+      "type": "scroll",
+      "offsetBot": "0%",
+      "stepsA": [{
+        "wait": "250ms"
+      }, {
+        "width": "100%",
+        "transition": "transform 2s ease-in-out 0, width 2s ease-in-out 0",
+        "x": "0px",
+        "y": "0px",
+        "z": "0px"
+      }],
+      "stepsB": []
+    }]
+  }
+},
+{
+  "slug": "onscroll-circle-1",
+  "name": "OnScroll - circle 1",
+  "value": {
+    "style": {
+      "opacity": 0,
+      "x": "0",
+      "y": "0",
+      "z": "0px"
+    },
+    "triggers": [{
+      "type": "scroll",
+      "offsetBot": "0%",
+      "stepsA": [{
+        "wait": "500ms"
+      }, {
+        "opacity": "1",
+        "transition": "transform 1s ease-in-out 0, opacity 1s ease-in-out 0",
+        "x": "0px",
+        "y": "0px",
+        "z": "0px"
+      }],
+      "stepsB": []
+    }]
+  }
+},
+
+{
+  "slug": "onscroll-circle-2",
+  "name": "OnScroll - circle 2",
+  "value": {
+    "style": {
+      "opacity": 0,
+      "x": "0px",
+      "y": "0",
+      "z": "0px"
+    },
+    "triggers": [{
+      "type": "scroll",
+      "offsetBot": "0%",
+      "stepsA": [{
+        "wait": "650ms"
+      }, {
+        "opacity": "1",
+        "transition": "transform 1s ease-in-out 0, opacity 1s ease-in-out 0",
+        "x": "0px",
+        "y": "0px",
+        "z": "0px"
+      }],
+      "stepsB": []
+    }]
+  }
+},
+{
+  "slug": "onscroll-circle-3",
+  "name": "OnScroll - circle 3",
+  "value": {
+    "style": {
+      "opacity": 0,
+      "x": "0px",
+      "y": "0",
+      "z": "0px"
+    },
+    "triggers": [{
+      "type": "scroll",
+      "offsetBot": "0%",
+      "stepsA": [{
+        "wait": "900ms"
+      }, {
+        "opacity": "1",
+        "transition": "transform 1s ease-in-out 0, opacity 1s ease-in-out 0",
+        "x": "0px",
+        "y": "0px",
+        "z": "0px"
+      }],
+      "stepsB": []
+    }]
+  }
+},
+{
+  "slug": "onscroll-circle-4",
+  "name": "OnScroll - circle 4",
+  "value": {
+    "style": {
+      "opacity": 0,
+      "x": "0px",
+      "y": "0",
+      "z": "0px"
+    },
+    "triggers": [{
+      "type": "scroll",
+      "offsetBot": "0%",
+      "stepsA": [{
+        "wait": "1.150s"
+      }, {
+        "opacity": "1",
+        "transition": "transform 1s ease-in-out 0, opacity 1s ease-in-out 0",
+        "x": "0px",
+        "y": "0px",
+        "z": "0px"
+      }],
+      "stepsB": []
+    }]
+  }
+},
+{
+  "slug": "onscroll-circle-5",
+  "name": "OnScroll - circle 5",
+  "value": {
+    "style": {
+      "opacity": 0,
+      "x": "0px",
+      "y": "0",
+      "z": "0px"
+    },
+    "triggers": [{
+      "type": "scroll",
+      "offsetBot": "0%",
+      "stepsA": [{
+        "wait": "1.4s"
+      }, {
+        "opacity": "1",
+        "transition": "transform 1s ease-in-out 0, opacity 1s ease-in-out 0",
+        "x": "0px",
+        "y": "0px",
+        "z": "0px"
+      }],
+      "stepsB": []
+    }]
+  }
+},
+{
+  "slug": "onscroll-circle-6",
+  "name": "OnScroll - circle 6",
+  "value": {
+    "style": {
+      "opacity": 0,
+      "x": "0px",
+      "y": "0",
+      "z": "0px"
+    },
+    "triggers": [{
+      "type": "scroll",
+      "offsetBot": "0%",
+      "stepsA": [{
+        "wait": "1.650s"
+      }, {
+        "opacity": "1",
+        "transition": "transform 1s ease-in-out 0, opacity 1s ease-in-out 0",
+        "x": "0px",
+        "y": "0px",
+        "z": "0px"
+      }],
+      "stepsB": []
+    }]
+  }
+},
+{
+  "slug": "onscroll-circle-7",
+  "name": "OnScroll - circle 7",
+  "value": {
+    "style": {
+      "opacity": 0,
+      "x": "0px",
+      "y": "0",
+      "z": "0px"
+    },
+    "triggers": [{
+      "type": "scroll",
+      "offsetBot": "0%",
+      "stepsA": [{
+        "wait": "1.9s"
+      }, {
+        "opacity": "1",
+        "transition": "transform 1s ease-in-out 0, opacity 1s ease-in-out 0",
         "x": "0px",
         "y": "0px",
         "z": "0px"
