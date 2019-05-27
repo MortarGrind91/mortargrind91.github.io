@@ -1990,35 +1990,7 @@ Webflow.require('ix').init([{
     }]
   }
 },
-{
-  "slug": "link-line-hover",
-  "name": "Link Line - Hover",
-  "value": {
-    "style": {},
-    "triggers": [{
-      "type": "hover",
-      "selector": ".link__bar",
-      "descend": true,
-      "preserve3d": true,
-      "stepsA": [{
-        "transition": "transform 200ms ease-out 0",
-        "x": "0px",
-        "y": "0px",
-        "z": "0px"
-      }, {
-        "transition": "transform 200 ease-in 0",
-        "x": "100%",
-        "y": "0px",
-        "z": "0px"
-      }],
-      "stepsB": [{
-        "x": "-110%",
-        "y": "0px",
-        "z": "0px"
-      }]
-    }]
-  }
-},
+
 {
   "slug": "mobile-open-menu",
   "name": "Mobile - Open Menu",
@@ -2087,44 +2059,7 @@ Webflow.require('ix').init([{
     }]
   }
 },
-{
-  "slug": "mobile-show-menu-label",
-  "name": "Mobile - Show Menu Label",
-  "value": {
-    "style": {
-      "x": "0px",
-      "y": "-100%",
-      "z": "0px"
-    },
-    "triggers": [{
-      "type": "load",
-      "preload": true,
-      "loopA": true,
-      "stepsA": [{
-        "wait": "3s"
-      }, {
-        "transition": "transform 800ms ease-out 0",
-        "x": "0px",
-        "y": "0px",
-        "z": "0px"
-      }, {
-        "wait": "600ms"
-      }, {
-        "transition": "transform 800ms ease 0, width 200 ease 0",
-        "x": "0px",
-        "y": "100%",
-        "z": "0px"
-      }, {
-        "x": "0px",
-        "y": "-100%",
-        "z": "0px"
-      }, {
-        "wait": "3s"
-      }],
-      "stepsB": []
-    }]
-  }
-},
+
 {
   "slug": "idea-blob",
   "name": "IDEA - Blob",
@@ -2582,6 +2517,29 @@ Webflow.require('ix').init([{
   }
 },
 {
+  "slug": "onscroll-fadein-55",
+  "name": "OnScroll - FadeIn 55",
+  "value": {
+    "style": {
+      "opacity": 0,
+      "x": "0px",
+      "y": "50%",
+      "z": "0px"
+    },
+    "triggers": [{
+      "type": "click",
+      "stepsA": [{
+        "opacity": 1,
+        "transition": "transform 600ms ease-in-out 0, opacity 600ms ease-in-out 0",
+        "x": "0px",
+        "y": "0px",
+        "z": "0px"
+      }],
+      "stepsB": []
+    }]
+  }
+},
+{
   "slug": "onscroll-fadein-2",
   "name": "OnScroll - FadeIn 2",
   "value": {
@@ -3008,30 +2966,7 @@ Webflow.require('ix').init([{
     }]
   }
 },
-{
-  "slug": "onhover-link-mail",
-  "name": "OnHover - Link Mail",
-  "value": {
-    "style": {},
-    "triggers": [{
-      "type": "hover",
-      "selector": ".hero__mail-icn",
-      "preserve3d": true,
-      "stepsA": [{
-        "transition": "transform 500ms ease 0",
-        "rotateX": "0deg",
-        "rotateY": "0deg",
-        "rotateZ": "360deg"
-      }],
-      "stepsB": [{
-        "transition": "transform 400ms ease 0",
-        "rotateX": "0deg",
-        "rotateY": "0deg",
-        "rotateZ": "0deg"
-      }]
-    }]
-  }
-},
+
 {
   "slug": "onhover-team-person",
   "name": "OnHover - Team Person",
