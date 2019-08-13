@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Afina school</title>
+
+    <!-- project styles -->
+    <link rel="stylesheet" href="/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/assets/css/uikit.min.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- end project styles -->
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="uk-container">
+            <div class="header-box">
+                <div class="header-logo">
+                    <img src="/images/logo.png" alt="logo">
+                </div>
+                <div class="header-item">
+                    <!-- header callback -->
+                    <div class="header-callback">
+                        <div class="header-phone">
+                            <a href="tel:0800300500">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.5933 10.8106C13.6221 11.0311 13.5549 11.2229 13.392 11.3859L11.4791 13.2843C11.3928 13.3802 11.2802 13.4617 11.1412 13.5288C11.0021 13.5959 10.8655 13.6391 10.7313 13.6582C10.7218 13.6582 10.6929 13.6607 10.645 13.6655C10.5971 13.6702 10.5348 13.6727 10.4581 13.6727C10.2758 13.6727 9.98097 13.6415 9.57347 13.5792C9.16596 13.5168 8.6674 13.3634 8.07777 13.1189C7.488 12.8744 6.81924 12.5076 6.07138 12.0187C5.32352 11.5298 4.52767 10.8585 3.6839 10.0052C3.01273 9.34357 2.45661 8.71075 2.01555 8.10671C1.57449 7.50263 1.21972 6.94411 0.951252 6.43114C0.682758 5.91817 0.481404 5.45314 0.347169 5.03605C0.212933 4.61896 0.121845 4.2594 0.0739036 3.95737C0.0259624 3.65534 0.00678586 3.41803 0.0163741 3.24544C0.0259624 3.07286 0.0307565 2.97697 0.0307565 2.9578C0.049933 2.82356 0.0930801 2.68693 0.160198 2.5479C0.227316 2.40887 0.308816 2.29621 0.404698 2.20991L2.31755 0.297056C2.45179 0.162821 2.6052 0.0957031 2.77779 0.0957031C2.90244 0.0957031 3.0127 0.131659 3.10859 0.203571C3.20447 0.275483 3.28597 0.364174 3.35309 0.469645L4.892 3.38927C4.97829 3.54268 5.00227 3.71047 4.96391 3.89265C4.92556 4.07483 4.84406 4.22824 4.71941 4.35289L4.01468 5.05762C3.9955 5.0768 3.97872 5.10796 3.96434 5.15111C3.94995 5.19426 3.94276 5.23021 3.94276 5.25898C3.98112 5.46033 4.06741 5.69045 4.20165 5.94933C4.31671 6.17945 4.49409 6.45991 4.73379 6.7907C4.9735 7.12149 5.31388 7.5026 5.75494 7.93407C6.18641 8.37518 6.56994 8.71791 6.90553 8.96246C7.24105 9.20687 7.5216 9.38672 7.74693 9.50178C7.97225 9.61684 8.14484 9.68635 8.26467 9.71025L8.4444 9.74623C8.46358 9.74623 8.49481 9.73902 8.53791 9.72466C8.58106 9.71025 8.61222 9.6935 8.63142 9.6743L9.45119 8.84012C9.62387 8.68673 9.82513 8.61002 10.0553 8.61002C10.2183 8.61002 10.3477 8.63876 10.4436 8.69632H10.4579L13.2337 10.3359C13.4351 10.4606 13.555 10.6188 13.5933 10.8106Z"
+                                        fill="black" />
+                                </svg>
+                                0-800-300-500
+                            </a>
+                        </div>
+                        <div class="header-mail">
+                            <a href="mailto:afinaconsalt@gmail.com">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.0656 12.9173C19.0656 13.3362 18.9504 13.7244 18.766 14.066L12.8691 7.31697L18.702 2.09664C18.9289 2.46498 19.0656 2.89766 19.0656 3.36523V12.9173ZM9.72753 8.5424L17.8438 1.27794C17.5108 1.09143 17.1357 0.977051 16.7311 0.977051H2.72392C2.31884 0.977051 1.94367 1.09143 1.61195 1.27794L9.72753 8.5424ZM11.9903 8.10291L10.1116 9.78551C10.0017 9.88343 9.86486 9.93233 9.72753 9.93233C9.59012 9.93233 9.45328 9.88343 9.34339 9.78551L7.46426 8.10283L1.49282 14.9382C1.85075 15.1679 2.27022 15.3055 2.72388 15.3055H16.7311C17.1847 15.3055 17.6044 15.1679 17.9622 14.9382L11.9903 8.10291ZM0.753066 2.0966C0.526201 2.46495 0.389404 2.89762 0.389404 3.36523V12.9174C0.389404 13.3362 0.50403 13.7245 0.68921 14.0661L6.58536 7.31583L0.753066 2.0966Z"
+                                        fill="black" />
+                                </svg>
+                                afinaconsalt@gmail.com
+                            </a>
+                        </div>
+                        <div class="header-lang__menu">
+                            <ul>
+                                <li><a href="#ru">Ru</a>
+                                    <ul class="sub-lange__menu">
+                                        <li><a href="#ua">Ua</a></li>
+                                        <li><a href="#en">En</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end header callback -->
+
+                    <!-- header menu -->
+                    <div class="header-menu">
+                        <nav class="nav-header__menu">
+                            <li><a href="#about-section" uk-scroll>О компании</a></li>
+                            <li><a href="#services-section" uk-scroll>Услуги</a>
+                                <ul class="header-sub__menu">
+                                    <li><a href="">test</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#clients-section" uk-scroll>Партнеры</a></li>
+                            <li><a href="#reviews-section" uk-scroll>Отзывы</a></li>
+                            <li><a href="#contacts-section" uk-scroll>Контакты</a></li>
+                        </nav>
+                        <div class="header-menu__burger">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- end header menu -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- section banner  -->
+    <section class="banner">
+        <div class="uk-container">
+            <div class="banner-description">
+                <h1 class="title-h1">Умные и надежные бизнес решения</h1>
+                <p>AfinaConsalt - это проект. направленный на повышение эффективности украинского бизнеса. В рамка этого
+                    проекта мы занимаемся как обучением будущих финансовых гениевб так и оказанием индивидуальных
+                    консультации, направленные на улучшение ключевых показателей компании.</p>
+                <button class="red-btn banner-btn" uk-toggle="target: #feedback-form">Консультация</button>
+            </div>
+        </div>
+    </section>
+    <!-- end section banner -->
+
+    <!-- section about company -->
+    <section class="about-company" id="about-section">
+        <div class="uk-container">
+            <div class="page-subtitle">
+                <div class="red-square"></div>
+                <p>О компании</p>
+            </div>
+            <h2 class="title-h2">Afina consalt<span> - лучшая консалтинговая компания</span></h2>
+            <div class="company-box">
+                <div class="company-item">
+                    <img src="/images/home/diagramm.svg" alt="diagramm">
+                </div>
+                <div class="company-item ">
+                    <div class="r-content">
+                        <p>Имея за плечами портфель знаний о финансах и управлении, наша команда приняла решение создать
+                            компанию, миссией которой есть <span class="text-bold">оптимизировать процессы с целью
+                                повышения эффективности</span> как
+                            можно большего количества бизнесов. Следуя своим ценностям, мы помогаем собственникам
+                            бизнеса непрерывно улучшать свои показатели эффективности, что приводит к общему повышению
+                            комфортности жизни <span class="text-bold">в Украине и странах СНГ</span>
+                        </p>
+                        <p>Имея за плечами портфель знаний о финансах и управлении, наша команда приняла решение создать
+                            компанию, миссией которой есть <span class="text-bold">оптимизировать процессы с целью
+                                повышения эффективности</span> как
+                            можно большего количества бизнесов. Следуя своим ценностям, мы помогаем собственникам
+                            бизнеса непрерывно улучшать свои показатели эффективности, что приводит к общему повышению
+                            комфортности жизни <span class="text-bold">в Украине и странах СНГ</span>
+                        </p>
+                    </div>
+                    <div class="read-more">
+                        <a href="#" class="r-more">Читать еще</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end section about compate -->
+
+    <!-- section get money -->
+    <section class="get-money">
+        <div class="uk-container">
+            <div class="page-subtitle">
+                <div class="red-square"></div>
+                <p>Вам это знакомо?</p>
+            </div>
+            <h2 class="title-h2">прибыль есть, а денег нет?</h2>
+            <div class="problems-box">
+                <p>Вытекающие проблемы:</p>
+                <div class="uk-column-1-3">
+                    <div class="proble-item">
+                        <p class="problem-number">01</p>
+                        <p class="problem-text">Показатели эффективности падают</p>
+                    </div>
+                    <div class="proble-item">
+                        <p class="problem-number">02</p>
+                        <p class="problem-text">Компания достигла "стеклянного потолка"</p>
+                    </div>
+                    <div class="proble-item">
+                        <p class="problem-number">03</p>
+                        <p class="problem-text">Команда не хочет или не может развиваться </p>
+                    </div>
+                </div>
+            </div>
+            <p class="strategy-text">Мы поможем разработать <span>четкую стратегию дальнейшего развития бизнеса</span> и
+                каскадируем цели
+                бизнеса на каждого сотрудника</p>
+            <button class="red-btn banner-btn" uk-toggle="target: #feedback-form">Связаться с нами</button>
+        </div>
+    </section>
+    <!-- end section get money -->
+
+    <!-- section about us -->
+    <section class="our-advantages">
+        <div class="uk-container">
+            <div class="page-subtitle">
+                <div class="red-square"></div>
+                <p>Почему выбирают нас?</p>
+            </div>
+            <div class="uk-column-1-2">
+                <div class="advantages-col">
+                    <h2 class="title-h2">Наши преимущества</h2>
+                    <img src="/images/home/advantages.jpg" alt="advantages image">
+                </div>
+                <div class="advantages-col">
+
+                    <div class="advantages-item">
+                        <div class="advantages-arrow">
+                            <svg width="44" height="27" viewBox="0 0 44 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M2.05355 11.233C1.47775 10.8402 0.689937 11.7077 1.2382 12.1873C11.9422 21.4986 26.9379 21.4169 39.5312 16.3738C39.3254 16.9421 39.1186 17.5036 38.9987 18.1023C38.8635 18.7694 39.6868 19.5559 40.2649 18.918C40.9631 18.1525 41.4349 17.2675 41.9043 16.3499C42.3242 15.528 43.0236 14.5178 42.7015 13.556C42.4007 12.6678 41.459 12.3245 40.6792 11.9625C39.5555 11.4404 38.4206 10.883 37.257 10.4565C35.4584 9.79351 34.7361 12.4615 36.3778 13.2275C37.0069 13.5226 37.6639 13.7597 38.3153 14.0046C26.5039 18.9615 12.8789 18.5962 2.05355 11.233Z"
+                                        fill="#CC1612" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="40.5822" height="15.0184" fill="white"
+                                            transform="translate(38.8701 26.7246) rotate(-162.398)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="advatnages-text">
+                            <h4 class="title-h4">Все в одном</h4>
+                            <p><span class="bg-red">Мы предлагаем полный спектр услуг для</span> максимизации
+                                прибыльности вашего бизнеса - от
+                                разработки стратегии до построения системы показателей эффективности.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantages-item">
+
+                        <div class="advantages-arrow">
+                            <svg width="44" height="27" viewBox="0 0 44 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M2.05355 11.233C1.47775 10.8402 0.689937 11.7077 1.2382 12.1873C11.9422 21.4986 26.9379 21.4169 39.5312 16.3738C39.3254 16.9421 39.1186 17.5036 38.9987 18.1023C38.8635 18.7694 39.6868 19.5559 40.2649 18.918C40.9631 18.1525 41.4349 17.2675 41.9043 16.3499C42.3242 15.528 43.0236 14.5178 42.7015 13.556C42.4007 12.6678 41.459 12.3245 40.6792 11.9625C39.5555 11.4404 38.4206 10.883 37.257 10.4565C35.4584 9.79351 34.7361 12.4615 36.3778 13.2275C37.0069 13.5226 37.6639 13.7597 38.3153 14.0046C26.5039 18.9615 12.8789 18.5962 2.05355 11.233Z"
+                                        fill="#CC1612" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="40.5822" height="15.0184" fill="white"
+                                            transform="translate(38.8701 26.7246) rotate(-162.398)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+
+                        <div class="advatnages-text">
+                            <h4 class="title-h4">Индивидуальный подход</h4>
+                            <p><span class="bg-red">Мы разрабатываем и внедряем</span> эффективные методы, которые
+                                приносят клиентам реальные результаты. </p>
+                        </div>
+
+                    </div>
+
+                    <div class="advantages-item">
+                        <div class="advantages-arrow">
+                            <svg width="44" height="27" viewBox="0 0 44 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M2.05355 11.233C1.47775 10.8402 0.689937 11.7077 1.2382 12.1873C11.9422 21.4986 26.9379 21.4169 39.5312 16.3738C39.3254 16.9421 39.1186 17.5036 38.9987 18.1023C38.8635 18.7694 39.6868 19.5559 40.2649 18.918C40.9631 18.1525 41.4349 17.2675 41.9043 16.3499C42.3242 15.528 43.0236 14.5178 42.7015 13.556C42.4007 12.6678 41.459 12.3245 40.6792 11.9625C39.5555 11.4404 38.4206 10.883 37.257 10.4565C35.4584 9.79351 34.7361 12.4615 36.3778 13.2275C37.0069 13.5226 37.6639 13.7597 38.3153 14.0046C26.5039 18.9615 12.8789 18.5962 2.05355 11.233Z"
+                                        fill="#CC1612" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="40.5822" height="15.0184" fill="white"
+                                            transform="translate(38.8701 26.7246) rotate(-162.398)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="advatnages-text">
+                            <h4 class="title-h4">Компетентность</h4>
+                            <p>Команда наших специалистов непрерывно совершенствует свои навыки.
+                                Одна из наших ценностей - <span class="bg-red">каждый день быть лучше,</span> чем
+                                вчера!</p>
+                        </div>
+
+                    </div>
+
+                    <div class="advantages-item">
+
+                        <div class="advantages-arrow">
+                            <svg width="44" height="27" viewBox="0 0 44 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M2.05355 11.233C1.47775 10.8402 0.689937 11.7077 1.2382 12.1873C11.9422 21.4986 26.9379 21.4169 39.5312 16.3738C39.3254 16.9421 39.1186 17.5036 38.9987 18.1023C38.8635 18.7694 39.6868 19.5559 40.2649 18.918C40.9631 18.1525 41.4349 17.2675 41.9043 16.3499C42.3242 15.528 43.0236 14.5178 42.7015 13.556C42.4007 12.6678 41.459 12.3245 40.6792 11.9625C39.5555 11.4404 38.4206 10.883 37.257 10.4565C35.4584 9.79351 34.7361 12.4615 36.3778 13.2275C37.0069 13.5226 37.6639 13.7597 38.3153 14.0046C26.5039 18.9615 12.8789 18.5962 2.05355 11.233Z"
+                                        fill="#CC1612" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="40.5822" height="15.0184" fill="white"
+                                            transform="translate(38.8701 26.7246) rotate(-162.398)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="advatnages-text">
+                            <h4 class="title-h4">Работа на результат</h4>
+                            <p>Оплата наших услуг полностью зависит от Ваших результатов, так как нам не интересно
+                                исскуственно затягивать выполнение проектов. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section about us -->
+
+    <!-- section services -->
+    <section class="services" id="services-section">
+        <div class="uk-container">
+            <div class="page-subtitle">
+                <div class="red-square"></div>
+                <p>Наши услуги</p>
+            </div>
+            <div class="serivces-box">
+                <h2 class="title-h2">Мы предоставляем такие виды услуг</h2>
+                <ul uk-accordion>
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#"><span>01</span> afina school</a>
+                        <div class="uk-accordion-content services-item">
+                            <div class="r-content">
+                                <h6 class="tittle-h6">Школа финансов</h6>
+                                <p>Школа стремится выпускать финансовых менеджеров, которые сразу смогут внедрять
+                                    приобретенные
+                                    инструменты</p>
+                                <p>Курс построен на алгоритме <span>40% теории</span> и <span>60% практики</span></p>
+                            </div>
+                            <div class="btn-show_more">
+                                <a href="#" class="show-more r-more">Читать еще</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#"><span>02</span> разработка стратегий</a>
+                        <div class="uk-accordion-content services-item">
+                            <div class="r-content">
+                                <p>Формулировка миссии, визии, ценностного предложения компании</p>
+                                <p>Разработка стратегии бизнеса</p>
+                                <p>Разработка целей компании - оптимальная финансово математическая модель бизнеса</p>
+                                <p>Разработка организационной структуры компании</p>
+                                <p>Аудит внешних процессов на предприятии</p>
+                                <p>Каскадирование целей компании на всех членов команды</p>
+                            </div>
+                            <div class="btn-show_more">
+                                <a href="#" class="show-more r-more">Читать еще</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#"><span>03</span> стратегический менеджмент</a>
+                        <div class="uk-accordion-content services-item">
+                            <div class="r-content">
+                                <h6 class="tittle-h6">Операционный менеджмент:</h6>
+                                <ul>
+                                    <li>Финансовый консалтинг</li>
+                                    <li>HR консалтинг</li>
+                                    <li>Маркетинговый консалтинг</li>
+                                    <li>Налоговый консалтинг</li>
+                                    <li>Операционный консалтинг</li>
+                                </ul>
+                                <h6 class="tittle-h6">Масштабирование</h6>
+                                <h6 class="tittle-h6">Антикризисное управление</h6>
+                            </div>
+                            <div class="btn-show_more">
+                                <a href="#" class="show-more r-more">Читать еще</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end section services -->
+
+    <!-- section our clients -->
+    <section class="our-clients" id="clients-section">
+        <div class="uk-container">
+            <h2 class="title-h2">Наши клиенты</h2>
+            <div class="our-clients__box uk-column-1-4">
+                <div class="our-clients__item"><img src="/images/home/monopack.svg" alt="monopack"></div>
+                <div class="our-clients__item"><img src="/images/home/risumlab.svg" alt="risumlab"></div>
+                <div class="our-clients__item"><img src="/images/home/monopack.svg" alt="monopack"></div>
+                <div class="our-clients__item"><img src="/images/home/risumlab.svg" alt="risumlab"></div>
+                <div class="our-clients__item"><img src="/images/home/monopack.svg" alt="monopack"></div>
+                <div class="our-clients__item"><img src="/images/home/risumlab.svg" alt="risumlab"></div>
+                <div class="our-clients__item"><img src="/images/home/monopack.svg" alt="monopack"></div>
+                <div class="our-clients__item"><img src="/images/home/risumlab.svg" alt="risumlab"></div>
+            </div>
+        </div>
+    </section>
+    <!-- end section our clients -->
+
+    <!-- section reviews -->
+    <section class="reviews" id="reviews-section">
+        <div class="uk-container">
+            <div class="page-subtitle">
+                <div class="red-square"></div>
+                <p>Отзывы</p>
+            </div>
+            <h2 class="title-h2">Что о нас говорят</h2>
+
+            <div class="reviews-slider">
+                <div class="reviews-slider__nav">
+                    <div class="reviews-nav__box">
+                        <div class="reviews-slider__control">
+                            <img src="/images/home/reviews/1-small.jpg" alt="nav 1">
+                        </div>
+                        <div class="reviews-slider__control">
+                            <img src="/images/home/reviews/2-small.jpg" alt="nav 3">
+                        </div>
+                        <div class="reviews-slider__control">
+                            <img src="/images/home/reviews/1-small.jpg" alt="nav 1">
+                        </div>
+                        <div class="reviews-slider__control">
+                            <img src="/images/home/reviews/2-small.jpg" alt="nav 3">
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-slider__box">
+                    <div class="reviews-slider__item">
+                        <img src="/images/home/reviews/1-big.jpg" alt="1">
+                        <div class="reviews-slider__decription">
+                            <div class="r-content review-content">
+                                <p class="reviews-title">Литвин Алина</p>
+                                <div class="review-item">
+                                    <p class="reviews-text">Uncommonly no it announcing melancholy an in. How one
+                                        dullgetbusy dare far. Expression alteration entreaties mrs can terminated
+                                        estimating.Equally he minutes my hastily. Girl quit if case mr sing as no have.
+                                        Do play they miss give so up. Limits far yet turned highly repair parish talked
+                                        six. Indulgence contrasted sufficient to unpleasant.</p>
+                                    <p class="reviews-text">Uncommonly no it announcing melancholy an in. How one
+                                        dullgetbusy dare far. Expression alteration entreaties mrs can terminated
+                                        estimating.Equally he minutes my hastily. Girl quit if case mr sing as no have.
+                                        Do play they miss give so up. Limits far yet turned highly repair parish talked
+                                        six. Indulgence contrasted sufficient to unpleasant.</p>
+                                </div>
+                            </div>
+                            <div class="btn-show_more">
+                                <a href="#" class="show-more_reviews r-more">Читать еще</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="reviews-slider__item">
+                        <img src="/images/home/reviews/2-big.jpg" alt="2">
+                        <div class="reviews-slider__decription">
+                            <div class="r-content review-content">
+                                <p class="reviews-title">Литвин Алина</p>
+                                <div class="review-item">
+                                    <p class="reviews-text">Uncommonly no it announcing melancholy an in. How one
+                                        dullgetbusy dare far. Expression alteration entreaties mrs can terminated
+                                        estimating.Equally he minutes my hastily. Girl quit if case mr sing as no have.
+                                        Do play they miss give so up. Limits far yet turned highly repair parish talked
+                                        six. Indulgence contrasted sufficient to unpleasant.</p>
+                                    <p class="reviews-text">Uncommonly no it announcing melancholy an in. How one
+                                        dullgetbusy dare far. Expression alteration entreaties mrs can terminated
+                                        estimating.Equally he minutes my hastily. Girl quit if case mr sing as no have.
+                                        Do play they miss give so up. Limits far yet turned highly repair parish talked
+                                        six. Indulgence contrasted sufficient to unpleasant.</p>
+                                </div>
+                            </div>
+                            <div class="btn-show_more">
+                                <a href="#" class="show-more_reviews r-more">Читать еще</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slider__item">
+                        <img src="/images/home/reviews/1-big.jpg" alt="3">
+                        <div class="reviews-slider__decription">
+                            <div class="r-content review-content">
+                                <p class="reviews-title">Литвин Алина</p>
+                                <div class="review-item">
+                                    <p class="reviews-text">Uncommonly no it announcing melancholy an in. How one
+                                        dullgetbusy dare far. Expression alteration entreaties mrs can terminated
+                                        estimating.Equally he minutes my hastily. Girl quit if case mr sing as no have.
+                                        Do play they miss give so up. Limits far yet turned highly repair parish talked
+                                        six. Indulgence contrasted sufficient to unpleasant.</p>
+                                    <p class="reviews-text">Uncommonly no it announcing melancholy an in. How one
+                                        dullgetbusy dare far. Expression alteration entreaties mrs can terminated
+                                        estimating.Equally he minutes my hastily. Girl quit if case mr sing as no have.
+                                        Do play they miss give so up. Limits far yet turned highly repair parish talked
+                                        six. Indulgence contrasted sufficient to unpleasant.</p>
+                                </div>
+                            </div>
+                            <div class="btn-show_more">
+                                <a href="#" class="show-more_reviews r-more">Читать еще</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-slider__item">
+                        <img src="/images/home/reviews/2-big.jpg" alt="2">
+                        <div class="reviews-slider__decription">
+                            <div class="r-content review-content">
+                                <p class="reviews-title">Литвин Алина</p>
+                                <div class="review-item">
+                                    <p class="reviews-text">Uncommonly no it announcing melancholy an in. How one
+                                        dullgetbusy dare far. Expression alteration entreaties mrs can terminated
+                                        estimating.Equally he minutes my hastily. Girl quit if case mr sing as no have.
+                                        Do play they miss give so up. Limits far yet turned highly repair parish talked
+                                        six. Indulgence contrasted sufficient to unpleasant.</p>
+                                    <p class="reviews-text">Uncommonly no it announcing melancholy an in. How one
+                                        dullgetbusy dare far. Expression alteration entreaties mrs can terminated
+                                        estimating.Equally he minutes my hastily. Girl quit if case mr sing as no have.
+                                        Do play they miss give so up. Limits far yet turned highly repair parish talked
+                                        six. Indulgence contrasted sufficient to unpleasant.</p>
+                                </div>
+                            </div>
+                            <div class="btn-show_more">
+                                <a href="#" class="show-more_reviews r-more">Читать еще</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section reviews -->
+
+    <!-- section contacts -->
+    <section class="contacts" id="contacts-section">
+        <div class="uk-container">
+            <h2 class="title-h2">связаться с нами</h2>
+            <div class="contacts-form">
+                <form method="POST" id="send-form-1">
+                    <div class="input-box">
+                        <label class="placeinput">
+                            <input type="text" name="name" required>
+                            <div class="place_holder">Имя<span>*</span></div>
+                        </label>
+                        <label class="placeinput">
+                            <input type="tel" name="tel" required>
+                            <div class="place_holder">Телефон<span>*</span></div>
+                        </label>
+                    </div>
+
+                    <label class="placeinput">
+                        <input type="email" name="email" required>
+                        <div class="place_holder">E-mail<span>*</span></div>
+                    </label>
+
+                    <textarea name="descr" id="" placeholder="Ваше сообщение"></textarea>
+                    <input type="submit" class="red-btn form-btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end section contacts -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="uk-container">
+            <div class="footer-box">
+                <!-- company -->
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <img src="/images/footer-logo.png" alt="footer logo">
+                    </div>
+                    <div class="footer-line"></div>
+                    <div class="footer-company__name">
+                        <p>Оптимизация и упарвление финансами</p>
+                    </div>
+                </div>
+                <!-- end company -->
+                <!-- footer menu -->
+                <div class="footer-menu">
+                    <p>Навигация</p>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Связаться</a></li>
+                    </ul>
+                </div>
+                <!-- end footer menu -->
+                <!-- footer contacts -->
+                <div class="footer-contacts">
+                    <p>Контакты</p>
+                    <ul>
+                        <li><a href="tel:0-800-300-500">0-800-300-500</a></li>
+                        <li><a href="tel:0-800-300-500">0-800-300-500</a></li>
+                        <li><a href="mailto:afinaconsalt@gmail.com">afinaconsalt@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- end footer contacts -->
+                <!-- footer social network -->
+                <div class="footer-social">
+                    <p>Мы в месенджерах</p>
+                    <ul>
+                        <li>
+                            <a href="viber">
+                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.8684 28C22.6004 28 28.8684 21.732 28.8684 14C28.8684 6.26801 22.6004 0 14.8684 0C7.13642 0 0.868408 6.26801 0.868408 14C0.868408 21.732 7.13642 28 14.8684 28Z"
+                                        fill="#6F3FAA" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.27 9.82088L22.2746 9.83936C22.737 11.9513 22.737 14.093 22.2745 16.2049L22.2699 16.2234C21.8959 17.7356 20.2094 19.3584 18.6607 19.696L18.6432 19.6996C17.391 19.9384 16.1295 20.0577 14.8685 20.0577C14.4975 20.0577 14.1263 20.0461 13.7553 20.0254L12.045 21.8032C11.6216 22.2442 10.877 21.9441 10.877 21.3331V19.645C9.38606 19.2193 7.82523 17.671 7.46658 16.2234L7.46243 16.2049C6.99999 14.093 6.99999 11.9512 7.46243 9.83936L7.46658 9.82088C7.84114 8.30871 9.52765 6.68592 11.0759 6.34833L11.0938 6.34472C13.5983 5.86687 16.1383 5.86687 18.6433 6.34472L18.6607 6.34833C20.2095 6.68592 21.8959 8.30861 22.27 9.82088ZM18.3734 18.3385C19.3908 18.1118 20.6712 16.8853 20.921 15.8987C21.3377 13.9898 21.3377 12.0546 20.921 10.1456C20.6713 9.15899 19.3913 7.93246 18.3734 7.70584C16.0477 7.26342 13.6891 7.26342 11.363 7.70584C10.3456 7.93246 9.06554 9.15899 8.81534 10.1456C8.39912 12.0545 8.39912 13.9897 8.81534 15.8986C9.06554 16.8853 10.3456 18.1118 11.363 18.3384L11.3637 18.3386C11.4091 18.3475 11.4421 18.3867 11.4421 18.433V21.2295C11.4421 21.3692 11.6127 21.4381 11.7098 21.3369L13.0381 19.9736L14.2869 18.6916C14.3054 18.6725 14.3311 18.6621 14.3578 18.6629C15.6989 18.7 17.0414 18.5918 18.3734 18.3385Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.0816 17.1896C16.9252 17.1421 16.7762 17.1102 16.6376 17.0529C15.2031 16.4577 13.883 15.6899 12.8373 14.5129C12.2426 13.8437 11.7772 13.0881 11.3838 12.2884C11.1972 11.9092 11.0399 11.5152 10.8797 11.1236C10.7335 10.7666 10.9488 10.3978 11.1754 10.1288C11.3881 9.87627 11.6618 9.68311 11.9582 9.54065C12.1895 9.42953 12.4177 9.49362 12.5867 9.68968C12.9519 10.1136 13.2874 10.5592 13.559 11.0506C13.7261 11.3529 13.6803 11.7224 13.3774 11.928C13.3038 11.978 13.2368 12.0368 13.1683 12.0932C13.1081 12.1427 13.0516 12.1927 13.0103 12.2597C12.935 12.3822 12.9314 12.5269 12.9799 12.6601C13.3532 13.6861 13.9825 14.484 15.0153 14.9138C15.1805 14.9826 15.3465 15.0626 15.5369 15.0404C15.8557 15.0032 15.959 14.6534 16.1824 14.4707C16.4008 14.2921 16.6799 14.2898 16.9151 14.4386C17.1504 14.5876 17.3785 14.7474 17.6052 14.909C17.8278 15.0676 18.0493 15.2226 18.2546 15.4035C18.452 15.5773 18.52 15.8054 18.4088 16.0412C18.2054 16.4733 17.9092 16.8327 17.4822 17.0622C17.3616 17.1268 17.2175 17.1477 17.0816 17.1896C17.2175 17.1477 16.9252 17.1421 17.0816 17.1896Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.8723 9.04664C16.7486 9.09925 18.2897 10.3444 18.62 12.1994C18.6763 12.5155 18.6963 12.8386 18.7213 13.1595C18.7319 13.2944 18.6554 13.4226 18.5099 13.4244C18.3595 13.4262 18.2918 13.3003 18.282 13.1655C18.2627 12.8985 18.2493 12.6303 18.2125 12.3656C18.0183 10.9678 16.9037 9.81145 15.5125 9.56333C15.3031 9.52598 15.0889 9.51619 14.8768 9.49393C14.7428 9.47987 14.5672 9.47178 14.5375 9.30509C14.5126 9.16537 14.6305 9.05413 14.7636 9.04697C14.7996 9.04484 14.836 9.04653 14.8723 9.04664C14.836 9.04653 16.7487 9.09925 14.8723 9.04664Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.7237 12.7431C17.7206 12.7665 17.719 12.8216 17.7052 12.8735C17.6555 13.0618 17.3698 13.0854 17.3041 12.8953C17.2846 12.8389 17.2817 12.7747 17.2816 12.714C17.2809 12.3167 17.1946 11.9196 16.9941 11.5739C16.7881 11.2184 16.4734 10.9198 16.1043 10.7389C15.881 10.6297 15.6397 10.5617 15.395 10.5213C15.2881 10.5036 15.18 10.4929 15.0726 10.4779C14.9424 10.4598 14.8728 10.3769 14.879 10.2486C14.8848 10.1284 14.9727 10.0418 15.1037 10.0493C15.5343 10.0737 15.9502 10.1669 16.3331 10.3695C17.1115 10.7818 17.5562 11.4325 17.686 12.3014C17.6919 12.3408 17.7013 12.3798 17.7043 12.4193C17.7116 12.5167 17.7163 12.6143 17.7237 12.7431C17.7163 12.6143 17.7206 12.7664 17.7237 12.7431Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.5567 12.6976C16.3997 12.7005 16.3157 12.6135 16.2995 12.4697C16.2883 12.3694 16.2793 12.2677 16.2553 12.17C16.2082 11.9777 16.106 11.7995 15.9442 11.6817C15.8679 11.626 15.7813 11.5855 15.6907 11.5593C15.5756 11.526 15.4559 11.5352 15.3411 11.507C15.2164 11.4765 15.1474 11.3754 15.167 11.2584C15.1848 11.1519 15.2884 11.0688 15.4048 11.0773C16.1323 11.1298 16.6522 11.5058 16.7264 12.3622C16.7317 12.4227 16.7378 12.4865 16.7244 12.5444C16.7014 12.6432 16.6281 12.6928 16.5567 12.6976C16.6281 12.6928 16.3997 12.7004 16.5567 12.6976Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.2746 9.83979L22.27 9.8213C22.0604 8.97359 21.4381 8.09127 20.659 7.41992L19.6058 8.35333C20.2321 8.85235 20.7687 9.54366 20.9212 10.146C21.3379 12.055 21.3379 13.9901 20.9212 15.8991C20.6714 16.8857 19.3909 18.1123 18.3735 18.3389C17.0416 18.5922 15.6991 18.7004 14.358 18.6633C14.3313 18.6625 14.3056 18.6729 14.2871 18.6921C14.0967 18.8874 13.0383 19.974 13.0383 19.974L11.71 21.3373C11.6129 21.4386 11.4423 21.3697 11.4423 21.2299V18.4334C11.4423 18.3872 11.4093 18.348 11.3639 18.339C11.3636 18.339 11.3634 18.3389 11.3632 18.3389C10.7849 18.2101 10.1222 17.7582 9.61163 17.2112L8.57092 18.1334C9.22088 18.8404 10.0592 19.412 10.877 19.6455V21.3336C10.877 21.9446 11.6216 22.2447 12.0449 21.8038L13.7553 20.0259C14.1263 20.0467 14.4974 20.0583 14.8685 20.0583C16.1294 20.0583 17.391 19.939 18.6432 19.7001L18.6607 19.6966C20.2094 19.359 21.8959 17.7363 22.2699 16.224L22.2745 16.2055C22.737 14.0934 22.737 11.9518 22.2746 9.83979Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.0902 17.2262C17.2509 17.1496 16.9054 17.1393 17.0902 17.2262V17.2262Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.2548 15.4035C18.0495 15.2228 17.8279 15.0677 17.6054 14.9091C17.3787 14.7475 17.1506 14.5877 16.9153 14.4387C16.6801 14.2898 16.401 14.2922 16.1826 14.4707C15.9591 14.6534 15.8559 15.0032 15.5371 15.0405C15.3467 15.0626 15.1807 14.9826 15.0155 14.9139C14.38 14.6495 13.8979 14.2453 13.5335 13.7349L12.7592 14.4212C12.7855 14.4517 12.8106 14.4829 12.8373 14.513C13.883 15.6899 15.2032 16.4578 16.6376 17.0529C16.7761 17.1103 16.9252 17.1423 17.0816 17.1897C16.9252 17.1422 17.2177 17.1479 17.0816 17.1897C17.2177 17.1479 17.3616 17.1268 17.4823 17.0622C17.9095 16.8327 18.2055 16.4733 18.4089 16.0413C18.5202 15.8054 18.4522 15.5774 18.2548 15.4035Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.9045 9.44562C14.9016 9.44562 14.8988 9.44462 14.8959 9.44462C14.8931 9.44395 14.8967 9.44462 14.9045 9.44562Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.8768 9.44413C14.8785 9.44413 14.8802 9.44513 14.8819 9.44513C14.9939 9.46779 16.8155 9.75213 14.8768 9.44413Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.5637 10.1631L17.2335 10.4557C17.7523 10.9605 18.1101 11.6295 18.2124 12.3657C18.2491 12.6305 18.2626 12.8986 18.2819 13.1656C18.2917 13.3005 18.3593 13.4263 18.5098 13.4246C18.6555 13.4228 18.7318 13.2947 18.7213 13.1597C18.6962 12.8389 18.6762 12.5157 18.62 12.1996C18.4754 11.3876 18.0988 10.6925 17.5637 10.1631Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.686 12.3013C17.5914 11.6681 17.3287 11.1515 16.8925 10.7578L16.5632 11.0496C16.7335 11.2007 16.8807 11.3781 16.9942 11.5739C17.1946 11.9196 17.281 12.3167 17.2816 12.714C17.2817 12.7747 17.2846 12.8389 17.3041 12.8954C17.3699 13.0856 17.6555 13.062 17.7053 12.8736C17.7191 12.8216 17.7206 12.7665 17.7238 12.7432C17.7206 12.7666 17.7162 12.6145 17.7238 12.7432C17.7162 12.6145 17.7116 12.5168 17.7042 12.4193C17.7013 12.3796 17.6919 12.3407 17.686 12.3013Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.7481 13.306C17.7345 12.5213 17.7424 13.4483 17.7481 13.306V13.306Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.5847 13.0288C16.5892 13.0278 16.5935 13.0201 16.5978 13.0184C16.5857 13.0184 16.5671 13.0194 16.548 13.0218C16.5604 13.0228 16.5717 13.0291 16.5847 13.0288Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.6004 13.0286C16.5878 13.0293 16.5768 13.0229 16.5647 13.0216C16.5045 13.0273 16.4423 13.0383 16.6004 13.0286Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.5866 13.0184C16.5821 13.0201 16.5778 13.0278 16.5735 13.0288C16.6071 13.0211 16.6042 13.0184 16.5866 13.0184Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.2254 11.3491L15.8903 11.6462C15.9087 11.6574 15.9268 11.6691 15.9444 11.6818C16.1062 11.7997 16.2084 11.9779 16.2555 12.1702C16.2795 12.2679 16.2883 12.3695 16.2996 12.4699C16.3151 12.6073 16.3932 12.6918 16.5368 12.6967C16.5472 12.6965 16.5575 12.6962 16.564 12.6962C16.6331 12.6885 16.7024 12.6401 16.7246 12.5445C16.738 12.4867 16.7318 12.4227 16.7265 12.3623C16.6849 11.8835 16.5039 11.555 16.2254 11.3491Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="what">
+                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.5715 28C22.3035 28 28.5715 21.732 28.5715 14C28.5715 6.26801 22.3035 0 14.5715 0C6.83955 0 0.571533 6.26801 0.571533 14C0.571533 21.732 6.83955 28 14.5715 28Z"
+                                        fill="#75B73B" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.55802 13.9595C6.54517 9.68755 9.91255 6.13374 14.1798 5.93073C18.8694 5.70734 22.7265 9.51758 22.581 14.1911C22.4448 18.551 18.8082 22.014 14.4467 21.9473C13.2109 21.9285 12.0432 21.6294 11.0035 21.1115L6.95691 22.0702C6.73499 22.1228 6.53352 21.9272 6.57951 21.7037L7.43029 17.574C6.87608 16.4887 6.56196 15.2606 6.55802 13.9595ZM14.5715 20.2093C16.2475 20.2093 17.8233 19.5566 19.0083 18.3716C20.1828 17.1971 20.8461 15.5957 20.846 13.9345C20.846 12.2587 20.1933 10.6829 19.0082 9.49787C17.8232 8.31285 16.2475 7.66016 14.5716 7.66016C12.9105 7.66016 11.3091 8.3233 10.1346 9.49787C8.94957 10.683 8.29688 12.2586 8.29688 13.9347C8.29688 14.9385 8.52634 15.8967 8.97894 16.783L9.25648 17.3268L8.73427 19.8619L11.2154 19.2741L11.7788 19.5549C12.6505 19.9891 13.5902 20.2093 14.5715 20.2093Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.4606 15.6726L16.9083 15.227C16.7044 15.1685 16.4846 15.2264 16.3359 15.3779L15.9562 15.7646C15.7962 15.9277 15.5534 15.9801 15.3415 15.8944C14.6072 15.5972 13.0626 14.2238 12.6684 13.537C12.5544 13.3388 12.5733 13.0912 12.713 12.9102L13.0443 12.4815C13.1742 12.3136 13.2015 12.0879 13.1157 11.8938L12.4627 10.4168C12.3063 10.0631 11.8542 9.96002 11.5589 10.2098C11.1257 10.5763 10.6117 11.133 10.5493 11.7498C10.4391 12.8374 10.9056 14.2083 12.6691 15.8544C14.7066 17.7563 16.3383 18.0074 17.4008 17.7501C18.0034 17.6042 18.485 17.0192 18.7887 16.5401C18.996 16.2132 18.8322 15.7794 18.4606 15.6726Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.0406 8.07764L18.8252 9.32331C18.8871 9.38046 18.9487 9.43793 19.0085 9.49782C20.1936 10.6828 20.8462 12.2586 20.8462 13.9344C20.8462 15.5956 20.183 17.1969 19.0085 18.3715C17.8235 19.5565 16.2477 20.2092 14.5717 20.2092C13.5904 20.2092 12.6508 19.989 11.779 19.5548L11.2156 19.274L8.73446 19.8618L8.78576 19.6128L6.58875 21.8644C6.6372 22.01 6.79136 22.1091 6.95701 22.0699L11.0036 21.1112C12.0433 21.6291 13.211 21.9282 14.4468 21.947C18.8083 22.0137 22.4451 18.5507 22.5811 14.1908C22.6563 11.7772 21.6638 9.59396 20.0406 8.07764Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.4606 15.6724L16.9083 15.2268C16.7044 15.1683 16.4846 15.2262 16.3359 15.3777L15.9562 15.7643C15.7962 15.9275 15.5534 15.9799 15.3415 15.8942C14.9174 15.7225 14.2231 15.1917 13.6361 14.6416L12.557 15.7477C12.594 15.7831 12.6309 15.8185 12.6691 15.8542C14.7066 17.7561 16.3383 18.0072 17.4008 17.7499C18.0034 17.604 18.485 17.019 18.7888 16.5399C18.996 16.213 18.8322 15.7792 18.4606 15.6724Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="telegram">
+                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.0714 27.9997C21.8033 27.9997 28.0712 21.7317 28.0712 13.9998C28.0712 6.26794 21.8033 0 14.0714 0C6.33947 0 0.0715332 6.26794 0.0715332 13.9998C0.0715332 21.7317 6.33947 27.9997 14.0714 27.9997Z"
+                                        fill="#41B4E6" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.7118 17.0397L18.0387 21.8165L21.2324 8.18359L4.91052 14.6039L9.87708 16.2489L18.9411 10.169L11.7118 17.0397Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.87708 16.2489L11.2373 21.1436L11.7118 17.0397L18.9411 10.1689L9.87708 16.2489Z"
+                                        fill="#D2D2D7" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.7682 18.5925L11.2374 21.144L11.712 17.04L13.7682 18.5925Z"
+                                        fill="#B9B9BE" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>Cоциальные сети</p>
+                    <ul>
+                        <li>
+                            <a href="youtube">
+                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip15)">
+                                        <path
+                                            d="M14.8684 28.0001C22.6004 28.0001 28.8685 21.732 28.8685 14C28.8685 6.26803 22.6004 0 14.8684 0C7.13644 0 0.868408 6.26803 0.868408 14C0.868408 21.732 7.13644 28.0001 14.8684 28.0001Z"
+                                            fill="#D42428" />
+                                        <path
+                                            d="M24.7675 4.09912C30.2348 9.56695 30.2353 18.4316 24.7675 23.8994C19.3001 29.3668 10.435 29.367 4.96716 23.8994L24.7675 4.09912Z"
+                                            fill="#CC202D" />
+                                        <path
+                                            d="M19.876 17.2462H18.9727L18.9771 16.7218C18.9771 16.4886 19.1684 16.2983 19.4024 16.2983H19.4603C19.6945 16.2983 19.8865 16.4886 19.8865 16.7218L19.876 17.2462ZM16.4895 16.1225C16.2611 16.1225 16.0737 16.2765 16.0737 16.4649V19.0149C16.0737 19.2032 16.2611 19.3564 16.4895 19.3564C16.7196 19.3564 16.9071 19.2032 16.9071 19.0149V16.4647C16.9071 16.2765 16.7196 16.1225 16.4895 16.1225ZM21.988 14.6964V19.547C21.988 20.7107 20.9791 21.6626 19.7453 21.6626H10.5247C9.29072 21.6626 8.28204 20.7105 8.28204 19.547V14.6964C8.28204 13.5327 9.29078 12.5804 10.5247 12.5804H19.7456C20.9791 12.5804 21.988 13.5329 21.988 14.6964ZM11.1395 20.0738L11.1391 14.9641L12.282 14.9645V14.2072L9.23507 14.2025V14.9466L10.1863 14.9495V20.0736H11.1395V20.0738ZM14.566 15.7254H13.613V18.4538C13.613 18.8487 13.6366 19.0461 13.6117 19.1155C13.5339 19.327 13.1855 19.5517 13.0499 19.1385C13.027 19.066 13.0473 18.8475 13.0469 18.4724L13.0424 15.7252H12.0947L12.0983 18.429C12.0987 18.8435 12.0888 19.1526 12.1014 19.2932C12.1246 19.5412 12.1159 19.8306 12.3465 19.9953C12.775 20.3046 13.5969 19.9493 13.8025 19.5078L13.8007 20.0711L14.5658 20.0722V15.7254H14.566ZM17.6147 18.8497L17.613 16.5787C17.6121 15.713 16.9648 15.1947 16.0854 15.895L16.0893 14.2065L15.1372 14.208L15.1325 20.0355L15.9153 20.024L15.9865 19.6608C16.9873 20.5796 17.6164 19.9505 17.6147 18.8497ZM20.5978 18.5489L19.8828 18.5527C19.8828 18.5812 19.8815 18.6137 19.881 18.6495V19.0483C19.881 19.2616 19.7049 19.4354 19.4906 19.4354H19.3507C19.136 19.4354 18.9599 19.2616 18.9599 19.0483V19.0041V18.5651V17.9992H20.5962V17.3832C20.5962 16.9334 20.5845 16.4835 20.5474 16.2262C20.4304 15.412 19.2879 15.2829 18.7105 15.6996C18.5293 15.8298 18.3911 16.004 18.3102 16.2384C18.2291 16.4725 18.1889 16.7919 18.1889 17.1983V18.5523C18.1895 20.8031 20.9233 20.485 20.5978 18.5489ZM16.9321 11.1972C16.9809 11.317 17.0572 11.4136 17.1613 11.487C17.2632 11.5586 17.3945 11.5951 17.5512 11.5951C17.6885 11.5951 17.8103 11.5579 17.916 11.4812C18.0219 11.405 18.1112 11.2913 18.1837 11.1393L18.1655 11.5133H19.2277V6.99562H18.3915V10.5117C18.3915 10.7018 18.2343 10.8576 18.0426 10.8576C17.8522 10.8576 17.6946 10.7018 17.6946 10.5117V6.99562H16.822V10.0426C16.822 10.4308 16.8289 10.6896 16.8406 10.8209C16.8531 10.9513 16.883 11.0762 16.9321 11.1972ZM13.7129 8.64567C13.7129 8.21196 13.7492 7.87349 13.8208 7.62943C13.8929 7.38602 14.0233 7.1904 14.2112 7.04317C14.3991 6.89482 14.6397 6.8208 14.9315 6.8208C15.1771 6.8208 15.3878 6.86918 15.5639 6.96359C15.7401 7.05865 15.8769 7.18178 15.9711 7.33409C16.0679 7.48687 16.1329 7.64402 16.1681 7.80472C16.2039 7.96743 16.2211 8.2135 16.2211 8.54441V9.68708C16.2211 10.1062 16.2044 10.4144 16.1719 10.6103C16.1398 10.8066 16.0704 10.9885 15.963 11.1589C15.8569 11.3279 15.7198 11.4541 15.5535 11.5345C15.386 11.6161 15.1943 11.6559 14.9772 11.6559C14.7354 11.6559 14.5311 11.6225 14.3633 11.5524C14.1949 11.483 14.0644 11.3782 13.9718 11.2392C13.8776 11.0999 13.812 10.9304 13.7724 10.7327C13.7321 10.5349 13.7131 10.238 13.7131 9.84187V8.64567H13.7129ZM14.5446 10.4405C14.5446 10.696 14.7353 10.9049 14.9672 10.9049C15.1991 10.9049 15.3886 10.6962 15.3886 10.4405V8.03531C15.3886 7.77979 15.1991 7.57088 14.9672 7.57088C14.7353 7.57088 14.5446 7.77955 14.5446 8.03531V10.4405ZM11.6046 11.6547H12.6071L12.608 8.18981L13.7923 5.22155H12.6961L12.0664 7.42667L11.4278 5.21582H10.3432L11.6031 8.19181L11.6046 11.6547Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip15">
+                                            <rect width="28" height="28" fill="white" transform="translate(0.868408)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="facebook">
+                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip16)">
+                                        <path
+                                            d="M14.5715 28C22.3035 28 28.5715 21.732 28.5715 14C28.5715 6.26801 22.3035 0 14.5715 0C6.83955 0 0.571533 6.26801 0.571533 14C0.571533 21.732 6.83955 28 14.5715 28Z"
+                                            fill="#3B5998" />
+                                        <path
+                                            d="M18.0911 14.5479H15.593V23.6999H11.8081V14.5479H10.008V11.3316H11.8081V9.25022C11.8081 7.76182 12.5151 5.43115 15.6267 5.43115L18.4303 5.44288V8.56492H16.3961C16.0624 8.56492 15.5932 8.73163 15.5932 9.44163V11.3346H18.4218L18.0911 14.5479Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip16">
+                                            <rect width="28" height="28" fill="white" transform="translate(0.571533)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="inst">
+                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip17)">
+                                        <path
+                                            d="M28.071 14C28.071 16.6024 27.3607 19.0394 26.1237 21.1275C25.3533 22.4268 24.3786 23.5915 23.2436 24.5765C20.894 26.6159 17.8584 27.8857 14.5288 27.9925C14.3767 27.9977 14.2242 28 14.071 28C13.9179 28 13.7654 27.9977 13.6133 27.9925C10.3002 27.8864 7.27911 26.6292 4.93439 24.6081C3.75497 23.5915 2.7471 22.3811 1.96011 21.0273C0.759125 18.9622 0.0710449 16.5611 0.0710449 14C0.0710449 11.5245 0.713409 9.19882 1.8407 7.18115C3.59796 4.03662 6.53271 1.63934 10.0481 0.586823C11.3219 0.205078 12.6727 0 14.071 0C15.4694 0 16.8202 0.205078 18.094 0.586823C21.5859 1.63251 24.5052 4.00522 26.2659 7.11877C27.415 9.15076 28.071 11.4989 28.071 14Z"
+                                            fill="url(#paint0_linear)" />
+                                        <g clip-path="url(#clip18)">
+                                            <path
+                                                d="M22.9834 10.9022C22.9436 10.0162 22.7975 9.40713 22.5882 8.87935C22.3724 8.31913 22.0403 7.81757 21.6052 7.40061C21.1801 6.97717 20.6653 6.64814 20.1008 6.43973C19.5595 6.2345 18.9418 6.09123 18.0385 6.05217C17.1285 6.0098 16.8396 6 14.5315 6C12.2235 6 11.9346 6.0098 11.0279 6.04886C10.1246 6.08792 9.50365 6.23132 8.96568 6.43642C8.39437 6.64814 7.883 6.97386 7.45789 7.40061C7.02616 7.81757 6.69083 8.32244 6.47821 8.87617C6.26896 9.40713 6.12289 10.0129 6.08306 10.8988C6.03987 11.7914 6.02988 12.0748 6.02988 14.3385C6.02988 16.6023 6.03987 16.8857 6.07969 17.7749C6.11952 18.6609 6.26572 19.27 6.47496 19.7977C6.69083 20.358 7.02616 20.8595 7.45789 21.2765C7.883 21.6999 8.39775 22.0289 8.96231 22.2374C9.50365 22.4426 10.1213 22.5859 11.0247 22.6249C11.9312 22.6641 12.2202 22.6738 14.5283 22.6738C16.8364 22.6738 17.1253 22.6641 18.0319 22.6249C18.9352 22.5859 19.5562 22.4426 20.0941 22.2374C21.2366 21.8041 22.1399 20.9182 22.5816 19.7977C22.7907 19.2668 22.9369 18.6609 22.9768 17.7749C23.0166 16.8857 23.0266 16.6023 23.0266 14.3385C23.0266 12.0748 23.0232 11.7914 22.9834 10.9022ZM21.4525 17.7098C21.4159 18.5241 21.2765 18.9638 21.1602 19.257C20.8746 19.9834 20.2868 20.5599 19.5462 20.84C19.2473 20.9541 18.7957 21.0908 17.9687 21.1266C17.0721 21.1658 16.8031 21.1754 14.5349 21.1754C12.2667 21.1754 11.9944 21.1658 11.101 21.1266C10.2707 21.0908 9.82239 20.9541 9.5235 20.84C9.15495 20.7065 8.81948 20.4947 8.54719 20.2179C8.26491 19.9475 8.04905 19.6218 7.91283 19.2603C7.7966 18.9671 7.65715 18.5241 7.62069 17.7131C7.58074 16.8336 7.57088 16.5698 7.57088 14.345C7.57088 12.1203 7.58074 11.8532 7.62069 10.9771C7.65715 10.1628 7.7966 9.72305 7.91283 9.4299C8.04905 9.0683 8.26491 8.73939 8.55056 8.4722C8.8261 8.19533 9.15819 7.98361 9.52687 7.85014C9.82576 7.73614 10.2775 7.59936 11.1043 7.56348C12.001 7.52442 12.27 7.51462 14.5381 7.51462C16.8098 7.51462 17.0787 7.52442 17.9721 7.56348C18.8023 7.59936 19.2507 7.73614 19.5496 7.85014C19.9181 7.98361 20.2536 8.19533 20.5259 8.4722C20.8081 8.74257 21.024 9.0683 21.1602 9.4299C21.2765 9.72305 21.4159 10.166 21.4525 10.9771C21.4923 11.8565 21.5023 12.1203 21.5023 14.345C21.5023 16.5698 21.4923 16.8303 21.4525 17.7098Z"
+                                                fill="white" />
+                                            <path
+                                                d="M14.5315 10.0552C12.1206 10.0552 10.1645 11.9736 10.1645 14.3385C10.1645 16.7033 12.1206 18.6217 14.5315 18.6217C16.9426 18.6217 18.8986 16.7033 18.8986 14.3385C18.8986 11.9736 16.9426 10.0552 14.5315 10.0552ZM14.5315 17.1169C12.9674 17.1169 11.6987 15.8727 11.6987 14.3385C11.6987 12.8042 12.9674 11.56 14.5315 11.56C16.0957 11.56 17.3643 12.8042 17.3643 14.3385C17.3643 15.8727 16.0957 17.1169 14.5315 17.1169Z"
+                                                fill="white" />
+                                            <path
+                                                d="M20.0909 9.88594C20.0909 10.4381 19.6344 10.8859 19.0712 10.8859C18.5082 10.8859 18.0517 10.4381 18.0517 9.88594C18.0517 9.3336 18.5082 8.88599 19.0712 8.88599C19.6344 8.88599 20.0909 9.3336 20.0909 9.88594Z"
+                                                fill="white" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear" x1="14.071" y1="28" x2="14.071" y2="0"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFD600" />
+                                            <stop offset="0.5271" stop-color="#FF0095" />
+                                            <stop offset="0.5802" stop-color="#F2069C" />
+                                            <stop offset="0.6791" stop-color="#CF14B0" />
+                                            <stop offset="0.813" stop-color="#962CCF" />
+                                            <stop offset="0.9753" stop-color="#494DFA" />
+                                            <stop offset="0.9951" stop-color="#3F51FF" />
+                                        </linearGradient>
+                                        <clipPath id="clip17">
+                                            <rect width="28" height="28" fill="white"
+                                                transform="translate(0.0710449)" />
+                                        </clipPath>
+                                        <clipPath id="clip18">
+                                            <rect width="17" height="16.6738" fill="white" transform="translate(6 6)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end footer social network -->
+            </div>
+            <div class="copyright">
+                <p>© copyright 2019</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- modal form -->
+
+    <div id="feedback-form" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="feedback-form">
+                <p class="feedback-form__title">хотите узнать больше ?</p>
+                <p class="feedback-form_subtitle">Оставьте свои данные и наш менеджер свяжется с Вами</p>
+                <form method="POST" id="send-form-2">
+                    <label class="placeinput">
+                        <input type="text" name="name" required>
+                        <div class="place_holder">Имя<span>*</span></div>
+                    </label>
+                    <label class="placeinput">
+                        <input type="text" name="tel" required>
+                        <div class="place_holder">Телефон<span>*</span></div>
+                    </label>
+                    <input type="submit" class="red-btn modal-btn">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end modal form -->
+
+    <!-- project scripts -->
+    <script src="/assets/js/jquery-3.3.1.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
+    <script src="/assets/js/jquery.fancybox.min.js"></script>
+    <script src="/assets/js/uikit.min.js"></script>
+    <script src="/assets/js/control.js"></script>
+    <!-- end project scripts -->
+</body>
+
+</html>
